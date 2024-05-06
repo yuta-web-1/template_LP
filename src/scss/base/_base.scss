@@ -1,0 +1,52 @@
+// 変数color
+
+// 変数font
+
+// line-height関数
+@function lh($size, $line-height) {
+  @return $line-height / $size;
+}
+
+// 初期設定
+body{
+}
+
+.container{
+}
+
+// ある時からbr削除
+.sm-only {
+  @media screen and (min-width: 600px) {
+    display: none;
+  }
+}
+.md-only {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.lg-only {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+// ある時からbr追加
+.only-sm {
+  display: none;
+  @media screen and (min-width: 600px) {
+    display: block;
+  }
+}
+.only-md {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+.only-lg {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+}
